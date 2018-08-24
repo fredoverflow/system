@@ -1,0 +1,6 @@
+[alias]
+	lol = log --oneline --graph --decorate --all
+	nera = commit -a --amend --no-edit --reset-author
+[user]
+	name = fredoverflow
+	email = fredoverflow@users.noreply.github.com
