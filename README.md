@@ -37,6 +37,18 @@ Extras / Optionen... / LibreOffice Writer / Kompatibilität
 [ ] Absatz- und Tabellenabstände AN SEITENANFÄNGEN addieren (aktuelles Dokument)
 ```
 
+## Merge video segments
+
+```
+ffmpeg -f concat -i inputs.txt -c copy output.mp4
+```
+* inputs.txt
+```
+file a.mp4
+file b.mp4
+file c.mp4
+```
+
 ## Bootable Windows installer
 
 * format USB stick with fat32
