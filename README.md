@@ -12,12 +12,15 @@ sudo apt install curl
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt install -y nodejs
 ```
-* add the following line to .profile:
+
+* add the following line to ~/.profile:
 ```
-export NPM_CONFIG_PREFIX=~/.npm-global
+export PATH=~/.npm-global/bin:$PATH
 ```
-* log out of linux and log back in
+
 ```
+source ~/.profile
+npm config set prefix '~/.npm-global'
 npm install -g typescript
 ```
 
