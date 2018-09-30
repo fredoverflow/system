@@ -1,6 +1,8 @@
 [alias]
 	lol = log --oneline --graph --decorate --all
 	nera = commit -a --amend --no-edit --reset-author
+	index = ls-files -s
+	cat = cat-file -p
 [user]
 	name = fredoverflow
 	email = fredoverflow@users.noreply.github.com
