@@ -11,18 +11,15 @@ alias cls='tput reset'
 sudo apt install curl
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt install -y nodejs
-```
 
-* add the following line to ~/.profile:
-```
-export PATH=~/.npm-global/bin:$PATH
-```
-
-```
-source ~/.profile
 npm config set prefix '~/.npm-global'
 npm install -g typescript
 ```
+* add the following line to ~/.bashrc:
+```
+export PATH=~/.npm-global/bin:$PATH
+```
+* close the shell
 
 ## ipe
 
