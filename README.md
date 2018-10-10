@@ -27,7 +27,7 @@ export PATH=~/.npm-global/bin:$PATH
 sudo apt install ipe
 sudo apt install texlive-latex-extra
 
-iperender -svg input.xml output.svg
+./xml2svg
 ```
 
 ## LibreOffice Writer
