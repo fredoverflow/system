@@ -5,21 +5,19 @@
 alias cls='tput reset'
 ```
 
-## TypeScript via Node.js
+## Thunderbird Lightning
 
 ```
-sudo apt install curl
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-sudo apt install -y nodejs
+sudo apt install lightning
+sudo apt install lightning-l10n-de
+```
 
-npm config set prefix '~/.npm-global'
-npm install -g typescript
+## LibreOffice Writer
+
 ```
-* add the following line to ~/.bashrc:
+Extras / Optionen... / LibreOffice Writer / Kompatibilität
+[ ] Absatz- und Tabellenabstände AN SEITENANFÄNGEN addieren (aktuelles Dokument)
 ```
-export PATH=~/.npm-global/bin:$PATH
-```
-* close the shell
 
 ## ipe
 
@@ -30,30 +28,29 @@ sudo apt install texlive-latex-extra
 ./xml2svg
 ```
 
-## LibreOffice Writer
+## TypeScript via Node.js
 
 ```
-Extras / Optionen... / LibreOffice Writer / Kompatibilität
-[ ] Absatz- und Tabellenabstände AN SEITENANFÄNGEN addieren (aktuelles Dokument)
-```
+sudo apt install curl
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt install -y nodejs
 
-## Merge video segments
+npm config set prefix '~/.npm-global'
+npm install -g typescript
+```
+* add the following line to .bashrc:
+```
+export PATH=~/.npm-global/bin:$PATH
+```
+* close the shell
 
-```
-ffmpeg -f concat -i inputs.txt -c copy output.mp4
-```
-* inputs.txt
-```
-file a.mp4
-file b.mp4
-file c.mp4
-```
 
 ## Bootable Windows installer
 
-* format USB stick with fat32
+* format USB stick with NTFS
 * set boot flag (via gparted)
 * copy files inside ISO file onto USB stick
+  * closing the target window may increase throughput significantly on NTFS
 ```
 sudo grub-install --boot-directory=/media/USER-NAME/STICK-NAME /dev/sdX
 ```
