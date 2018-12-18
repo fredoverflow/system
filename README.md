@@ -28,6 +28,15 @@ sudo apt install texlive-latex-extra
 ./xml2svg
 ```
 
+## Maven Surefire
+
+> Error: Could not find or load main class org.apache.maven.surefire.booter.ForkedBooter
+
+* add the following line to .bashrc until [the issue](https://stackoverflow.com/q/53010200) is resolved:
+```
+export _JAVA_OPTIONS=-Djdk.net.URLClassPath.disableClassPathURLCheck=true
+```
+
 ## TypeScript via Node.js
 
 ```
