@@ -28,6 +28,18 @@ sudo apt install texlive-latex-extra
 ./xml2svg
 ```
 
+## Pseudo-stereo videos
+
+* duplicate left channel:
+```
+ffmpeg -i input.mp4 -map_channel 0.1.0 -map_channel 0.1.0 -c:v copy stereo.mp4
+```
+
+* duplicate right channel:
+```
+ffmpeg -i input.mp4 -map_channel 0.1.1 -map_channel 0.1.1 -c:v copy stereo.mp4
+```
+
 ## Maven Surefire
 
 > Error: Could not find or load main class org.apache.maven.surefire.booter.ForkedBooter
