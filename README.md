@@ -40,15 +40,6 @@ ffmpeg -i input.mp4 -map_channel 0.1.0 -map_channel 0.1.0 -c:v copy stereo.mp4
 ffmpeg -i input.mp4 -map_channel 0.1.1 -map_channel 0.1.1 -c:v copy stereo.mp4
 ```
 
-## Maven Surefire
-
-> Error: Could not find or load main class org.apache.maven.surefire.booter.ForkedBooter
-
-* add the following line to .bashrc until [the issue](https://stackoverflow.com/q/53010200) is resolved:
-```
-export _JAVA_OPTIONS=-Djdk.net.URLClassPath.disableClassPathURLCheck=true
-```
-
 ## TypeScript via Node.js
 
 ```
@@ -64,7 +55,6 @@ npm install -g typescript
 export PATH=~/.npm-global/bin:$PATH
 ```
 * close the shell
-
 
 ## Bootable Windows installer
 
@@ -86,4 +76,48 @@ menuentry 'Install Windows' {
 
 ```
 bootsect /nt60 c: /mbr
+```
+
+## Windows Subsystem for Linux
+
+* open PowerShell **as Administrator** and enable WSL:
+```
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+* confirm computer restart
+* download https://aka.ms/wsl-debian-gnulinux
+* double-click on .appx file and select Install
+* pick username and password
+```
+sudo apt update
+```
+
+### git
+
+```
+sudo apt install git
+git --version
+git config --global core.autocrlf true
+```
+
+### Maven
+
+```
+sudo apt install openjdk-8-source
+javac -version
+sudo apt install maven
+mvn --version
+```
+* to share the local repository, create ~/.m2/settings.xml with the following content:
+```
+<settings>
+    <localRepository>/mnt/c/Users/fred/.m2/repository</localRepository>
+</settings>
+```
+
+> Error: Could not find or load main class org.apache.maven.surefire.booter.ForkedBooter
+
+* add the following line to .bashrc until [the issue](https://stackoverflow.com/questions/53010200) is resolved:
+```
+export _JAVA_OPTIONS=-Djdk.net.URLClassPath.disableClassPathURLCheck=true
 ```
