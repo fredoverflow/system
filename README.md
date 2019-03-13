@@ -5,6 +5,13 @@
 alias cls='tput reset'
 ```
 
+## Firefox
+
+* enter `about:config` as URL
+* accept the risk
+* set `layers.acceleration.force-enabled` to `true` via double-click
+* restart Firefox
+
 ## Thunderbird Lightning
 
 ```
