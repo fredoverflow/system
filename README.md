@@ -35,6 +35,24 @@ sudo apt install texlive-latex-extra
 ./xml2svg
 ```
 
+## Markdown PDF
+
+* `sudo apt install chromium`
+  * `which chromium` should print `/usr/bin/chromium`
+* https://code.visualstudio.com/download
+  * download .deb file
+  * install .deb file via double-click
+  * launch from start menu or via `code`
+* Ctrl+Shift+P `settings`
+  * Preferences: Open Settings (JSON)
+  * insert `"markdown-pdf.executablePath": "/usr/bin/chromium"`
+  * Ctrl+S
+* Ctrl+Shift+X
+  * Search Extensions in Marketplace: `markdown pdf`
+  * Markdown PDF **yzane** `Install`
+* right-click inside .md file
+  * Markdown PDF: Export (pdf)
+
 ## Pseudo-stereo videos
 
 * duplicate left channel:
