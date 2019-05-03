@@ -103,6 +103,13 @@ menuentry 'Install Windows' {
 bootsect /nt60 c: /mbr
 ```
 
+## Remove github Windows credentials
+
+* Anmeldeinformationsverwaltung
+* Windows-Anmeldeinformationen
+* git:https://github.com aufklappen
+* Entfernen
+
 ## Windows Subsystem for Linux
 
 * open PowerShell **as Administrator** and enable WSL:
