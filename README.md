@@ -65,11 +65,11 @@ ffmpeg -i input.mp4 -map_channel 0.1.0 -map_channel 0.1.0 -c:v copy stereo.mp4
 ffmpeg -i input.mp4 -map_channel 0.1.1 -map_channel 0.1.1 -c:v copy stereo.mp4
 ```
 
-## TypeScript via Node.js
+## Node.js and TypeScript
 
 ```
 sudo apt install curl
-curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt install -y nodejs
 
 npm config set prefix '~/.npm-global'
@@ -79,7 +79,7 @@ npm install -g typescript
 ```
 export PATH=~/.npm-global/bin:$PATH
 ```
-* close the shell
+* close the terminal
 
 ## Bootable Windows installer
 
