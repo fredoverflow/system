@@ -12,13 +12,6 @@ alias cls='tput reset'
 * set `layers.acceleration.force-enabled` to `true` via double-click
 * restart Firefox
 
-## Thunderbird Lightning
-
-```
-sudo apt install lightning
-sudo apt install lightning-l10n-de
-```
-
 ## LibreOffice Writer
 
 ```
