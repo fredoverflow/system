@@ -46,18 +46,6 @@ sudo apt install texlive-latex-extra
 * right-click inside .md file
   * Markdown PDF: Export (pdf)
 
-## Pseudo-stereo videos
-
-* duplicate left channel:
-```
-ffmpeg -i input.mp4 -map_channel 0.1.0 -map_channel 0.1.0 -c:v copy stereo.mp4
-```
-
-* duplicate right channel:
-```
-ffmpeg -i input.mp4 -map_channel 0.1.1 -map_channel 0.1.1 -c:v copy stereo.mp4
-```
-
 ## Node.js and TypeScript
 
 ```
