@@ -3,6 +3,7 @@
 	nera = commit -a --amend --no-edit --reset-author
 	index = ls-files -s
 	cat = cat-file -p
+	write = hash-object -w
 [user]
 	name = fredoverflow
 	email = fredoverflow@users.noreply.github.com
