@@ -62,6 +62,19 @@ export PATH=~/.npm-global/bin:$PATH
 ```
 * close the terminal
 
+### Local development with ES6 modules
+
+* Browsers reject loading modules from the file system with a CORS error
+* Hence the project files must be served by a local web server:
+
+```
+npm install -g http-server
+
+cd project
+http-server
+firefox localhost:8080
+```
+
 ## Bootable Windows installer
 
 * format USB stick with NTFS
