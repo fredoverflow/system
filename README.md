@@ -5,6 +5,12 @@
 alias cls='tput reset'
 ```
 
+## Cinnamon
+
+```
+sudo sed -i "s|mini=20, maxi=60,|mini=40, maxi=120,|g" /usr/share/cinnamon/cinnamon-settings/modules/cs_panel.py
+```
+
 ## Firefox
 
 * enter `about:config` as URL
