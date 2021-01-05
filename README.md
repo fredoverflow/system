@@ -36,15 +36,16 @@ sudo apt install texlive-latex-extra
 
 ## Markdown PDF
 
-* `sudo apt install chromium`
-  * `which chromium` should print `/usr/bin/chromium`
+* https://www.google.com/chrome
+  * download .deb file
+  * install .deb file via double-click
 * https://code.visualstudio.com/download
   * download .deb file
   * install .deb file via double-click
   * launch from start menu or via `code`
 * Ctrl+Shift+P `settings`
   * Preferences: Open Settings (JSON)
-  * insert `"markdown-pdf.executablePath": "/usr/bin/chromium"`
+  * insert `"markdown-pdf.executablePath": "/usr/bin/google-chrome",`
   * Ctrl+S
 * Ctrl+Shift+X
   * Search Extensions in Marketplace: `markdown pdf`
