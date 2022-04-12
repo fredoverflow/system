@@ -1,0 +1,10 @@
+{
+    "editor.cursorBlinking": "solid",
+    "editor.minimap.enabled": false,
+    "editor.hover.enabled": false,
+    "editor.quickSuggestions": false,
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "extensions.ignoreRecommendations": true,
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Solarized Light"
+}
